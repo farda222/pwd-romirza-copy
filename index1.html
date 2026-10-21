@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portofolio Romirza Putra Aditya, mahasiswa Sistem Informasi Universitas Dian Nuswantoro."
+    />
+    <title>Portofolio | Romirza Putra Aditya</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <style>
+      :root {
+        --portfolio-ink: #183044;
+        --portfolio-primary: #176b87;
+        --portfolio-soft: #eff8fa;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem;
+      }
+
+      body {
+        color: var(--portfolio-ink);
+        background: #f8fafc;
+      }
+
+      .navbar {
+        background: rgb(255 255 255 / 96%);
+        backdrop-filter: blur(12px);
+      }
+
+      .navbar-brand,
+      .section-kicker {
+        color: var(--portfolio-primary);
+      }
+
+      .hero {
+        background:
+          radial-gradient(ellipse at top right, #d8f1f3 0, transparent 42%),
+          linear-gradient(135deg, #eff8fa 0%, #fff 68%);
+      }
+
+      .profile-photo {
+        width: min(100%, 250px);
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .section-card,
+      .portfolio-card {
+        border: 1px solid #e5edf2;
+        border-radius: 1rem;
+        box-shadow: 0 0.75rem 2rem rgb(24 48 68 / 5%);
+      }
+
+      .section-kicker {
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .skill-tag {
+        background: var(--portfolio-soft);
+        color: var(--portfolio-primary);
+      }
+
+      .certificate-image {
+        height: 210px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .contact-section {
+        background: var(--portfolio-soft);
+      }
+
+      footer {
+        background: var(--portfolio-ink);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top border-bottom" aria-label="Navigasi utama">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#beranda">Portofolio Romirza Putra Aditya <span class="text-dark">.</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavigation"
+          aria-controls="mainNavigation"
+          aria-expanded="false"
+          aria-label="Buka navigasi"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+            <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sertifikat">Sertifikat</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyek">Proyek</a></li>
+            <li class="nav-item">
+              <a class="btn btn-primary btn-sm px-3 mt-2 mt-lg-0" href="#kontak">Hubungi saya</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero py-5" id="beranda">
+        <div class="container py-lg-4">
+          <div class="row align-items-center g-3 g-lg-5">
+            <div class="col-lg-4 text-center">
+              <img
+                src="./img/fotoku.jpeg"
+                class="profile-photo img-thumbnail rounded-4 shadow"
+                alt="Foto profil Romirza Putra Aditya"
+              />
+            </div>
+            <div class="col-lg-8">
+              <p class="section-kicker mb-2">Holaa, Selamat Datang di Halaman Saya!! </p>
+              <h1 class="display-5 fw-bold mb-3">Romirza Putra Aditya</h1>
+              <p class="lead text-secondary mb-4">
+                Mahasiswa Sistem Informasi · Universitas Dian Nuswantoro
+              </p>
+              <p class="mb-4">
+                Saya adalah mahasiswa aktif Program Studi Sistem Informasi di Fakultas Ilmu
+                Komputer. Saya tertarik pada pengembangan aplikasi web, perancangan basis data,
+                serta analisis sistem informasi. Saya senang mempelajari teknologi baru dan
+                mengembangkan solusi yang mudah digunakan.
+              </p>
+              <a class="btn btn-primary me-2 mb-2" href="#proyek">Lihat aktivitas</a>
+              <a class="btn btn-outline-secondary mb-2" href="#kontak">Kirim pesan</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5" id="profil">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <article class="section-card bg-white p-4 p-lg-5">
+              <p class="section-kicker mb-2">Tentang saya</p>
+              <h2 class="h3 fw-bold mb-3">Belajar, Membangun, dan Berkembang</h2>
+              <p class="text-secondary mb-0">
+                Selama menjadi mahasiswa, saya terus meningkatkan pengetahuan dan keterampilan
+                melalui tugas serta proyek perkuliahan. Portofolio ini disusun sebagai latihan
+                pengembangan web dengan HTML, CSS, dan Bootstrap.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container pb-5" id="pendidikan">
+        <div class="section-card bg-white p-4 p-lg-5">
+          <div class="mb-4">
+            <p class="section-kicker mb-2">Perjalanan akademik</p>
+            <h2 class="h3 fw-bold mb-0">Riwayat Pendidikan</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">Tingkat pendidikan</th>
+                  <th scope="col">Instansi</th>
+                  <th scope="col">Tahun</th>
+                  <th scope="col">Keterangan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SMK</td>
+                  <td>SMK TEXMACO Semarang</td>
+                  <td>2021–2024</td>
+                  <td>Jurusan TKJ</td>
+                </tr>
+                <tr>
+                  <td>Perguruan Tinggi (S1)</td>
+                  <td>
+                    <a href="https://www.dinus.ac.id" target="_blank" rel="noopener noreferrer">
+                      Universitas Dian Nuswantoro
+                    </a>
+                  </td>
+                  <td>2025–Sekarang</td>
+                  <td>Sistem Informasi</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="container pb-5" id="keahlian">
+        <div class="mb-4">
+          <p class="section-kicker mb-2">Hal yang saya tekuni</p>
+          <h2 class="h3 fw-bold mb-0">Keahlian &amp; Hobi</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <article class="portfolio-card h-100 bg-white p-4">
+              <h3 class="h5 fw-bold mb-3">Keahlian utama</h3>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill skill-tag p-2">HTML &amp; PHP</span>
+                <span class="badge rounded-pill skill-tag p-2">Database MySQL</span>
+                <span class="badge rounded-pill skill-tag p-2">Pemodelan DFD &amp; ERD</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="portfolio-card h-100 bg-white p-4">
+              <h3 class="h5 fw-bold mb-3">Hobi &amp; minat</h3>
+              <ul class="mb-0 ps-3">
+                <li class="mb-2">
+                  Membaca dokumentasi di
+                  <a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools</a>
+                </li>
+                <li class="mb-2">Eksplorasi pembuatan aplikasi web</li>
+                <li>Menulis</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container pb-5" id="sertifikat">
+        <div class="mb-4">
+          <p class="section-kicker mb-2">Pencapaian</p>
+          <h2 class="h3 fw-bold mb-0">Sertifikat</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-4">
+            <article class="portfolio-card h-100 bg-white overflow-hidden">
+              <img src="./img/sertif 1.png" class="certificate-image card-img-top" alt="Pratinjau Sertifikat 1" />
+              <div class="p-3"><h3 class="h6 fw-bold mb-0">Sertifikat 1</h3></div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <article class="portfolio-card h-100 bg-white overflow-hidden">
+              <img src="./img/sertif 2.png" class="certificate-image card-img-top" alt="Pratinjau Sertifikat 2" />
+              <div class="p-3"><h3 class="h6 fw-bold mb-0">Sertifikat 2</h3></div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <article class="portfolio-card h-100 bg-white overflow-hidden">
+              <img src="./img/sertif 3.png" class="certificate-image card-img-top" alt="Pratinjau Sertifikat 3" />
+              <div class="p-3"><h3 class="h6 fw-bold mb-0">Sertifikat 3</h3></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container pb-5" id="proyek">
+        <div class="section-card bg-white p-4 p-lg-5">
+          <p class="section-kicker mb-2">Proyek &amp; aktivitas akademik</p>
+          <h2 class="h3 fw-bold mb-3">Tugas Pemrograman Web 1</h2>
+          <p class="text-secondary mb-4">
+            Proyek ini berisi halaman profil dan formulir interaktif menggunakan elemen semantik
+            HTML, tabel terstruktur, dan berbagai elemen input formulir.
+          </p>
+          <aside class="alert alert-info mb-0" aria-label="Catatan kampus">
+            <strong>Catatan kampus:</strong> Informasi jadwal perkuliahan dan kurikulum dapat
+            dilihat di portal
+            <a href="https://mhs.dinus.ac.id" target="_blank" rel="noopener noreferrer">Siadin Udinus</a>.
+          </aside>
+        </div>
+      </section>
+
+      <section class="contact-section py-5" id="kontak">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-card bg-white p-4 p-lg-5">
+                <p class="section-kicker mb-2">Mari terhubung</p>
+                <h2 class="h3 fw-bold mb-2">Form Kontak Pengunjung</h2>
+                <p class="text-secondary mb-4">Silakan isi formulir berikut untuk mengirimkan pesan.</p>
+                <form action="simpan.php" method="post" enctype="multipart/form-data">
+                  <div class="mb-3">
+                    <label class="form-label" for="fnama">Nama lengkap</label>
+                    <input class="form-control" type="text" id="fnama" name="fnama" autocomplete="name" required />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="femail">Email</label>
+                    <input class="form-control" type="email" id="femail" name="femail" autocomplete="email" required />
+                  </div>
+                  <fieldset class="mb-3">
+                    <legend class="form-label fs-6">Jenis kelamin</legend>
+                    <div class="d-flex flex-wrap gap-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" id="pria" name="fjkel" value="Pria" />
+                        <label class="form-check-label" for="pria">Pria</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" id="wanita" name="fjkel" value="Wanita" />
+                        <label class="form-check-label" for="wanita">Wanita</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="mb-3">
+                    <label class="form-label" for="fprodi">Program studi</label>
+                    <select class="form-select" id="fprodi" name="fprodi">
+                      <option value="SI">Sistem Informasi S1</option>
+                      <option value="TI">Teknik Informatika S1</option>
+                      <option value="DKV">Desain Komunikasi Visual S1</option>
+                    </select>
+                  </div>
+                  <fieldset class="mb-3">
+                    <legend class="form-label fs-6">Hobi / minat</legend>
+                    <div class="d-flex flex-wrap gap-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="coding" name="fhobi[]" value="Coding" />
+                        <label class="form-check-label" for="coding">Coding</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="reading" name="fhobi[]" value="Membaca" />
+                        <label class="form-check-label" for="reading">Membaca</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="mb-3">
+                    <label class="form-label" for="ftgs">File tugas</label>
+                    <input class="form-control" type="file" id="ftgs" name="ftgs" />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label" for="fpesan">Pesan</label>
+                    <textarea class="form-control" id="fpesan" name="fpesan" rows="4"></textarea>
+                  </div>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-primary" type="submit">Kirim pesan</button>
+                    <button class="btn btn-outline-secondary" type="reset">Batal</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 text-center text-white">
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2026 Romirza Putra Aditya · Pemrograman Web · Sistem Informasi
+          Universitas Dian Nuswantoro
+        </p>
+      </div>
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
